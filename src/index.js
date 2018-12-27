@@ -1,15 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class App extends React.Component {
-    state = {}
-    render() {
-        return (
-            <div>
-                <h1>I am the App. LOL</h1>
-            </div>
-        )
-    }
-}
+import Container from './components/Container';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.hydrate(<Container />, document.getElementById('root'));
